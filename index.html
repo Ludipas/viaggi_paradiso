@@ -74,59 +74,81 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script>
 
-        $(function() {
-          $('.smooth').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
-              }
-            }
-          });
-        });
-      
+  $(function() {
+    $('.smooth').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  $(document).ready(function(){
+    $('.movement').each(function() {
+      animationHover(this, 'bounce');
+    });
+    $('.share').each(function() {
+      animationHover(this, 'tada');
+    });
+  });
 
-  // $(function() {
-  //   $('a[href*="#"]:not([href="#"])').click(function() {
-  //     var multiplier = this.getAttribute('data-distance');
-  //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-  //       var target = $(this.hash);
-  //       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-  //       if (target.length) {
-  //         $('html, body').animate({
-  //           scrollTop: target.offset().top
-  //         }, 1000 * multiplier, 'easeInOutQuad');
-  //         return false;
-  //       }
-  //     }
-  //   });
-  // });
-  //
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() >= 800) {
-  //     $('.backtotop-box').fadeIn(200);
-  //     $('.backtotop-box').addClass('shown');
-  //   } else {
-  //     $('.backtotop-box').fadeOut(200);
-  //     $('.backtotop-box').removeClass('shown');
-  //   }
-  // });
-  // $('.backtotop-box').click(function() {
-  //   $('html, body').animate({
-  //     scrollTop: 0
-  //   }, 1000, 'easeInOutQuad');
-  // });
-  //
-  // function(b) {
-  //   return "undefined" != typeof r && r.event.triggered !== b.type ? r.event.dispatch.apply(a, arguments) : void 0
-  // }
-  </script>
-</body>
-</html>
+  function animationHover(element, animation){
+    element = $(element);
+    element.hover(
+      function() {
+        element.addClass('animated ' + animation);
+      },
+      function(){
+        //wait for animation to finish before removing classes
+        window.setTimeout( function(){
+          element.removeClass('animated ' + animation);
+        }, 2000);
+      });
+    }
+
+
+    // $(function() {
+    //   $('a[href*="#"]:not([href="#"])').click(function() {
+    //     var multiplier = this.getAttribute('data-distance');
+    //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    //       var target = $(this.hash);
+    //       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    //       if (target.length) {
+    //         $('html, body').animate({
+    //           scrollTop: target.offset().top
+    //         }, 1000 * multiplier, 'easeInOutQuad');
+    //         return false;
+    //       }
+    //     }
+    //   });
+    // });
+    //
+    // $(window).scroll(function() {
+    //   if ($(this).scrollTop() >= 800) {
+    //     $('.backtotop-box').fadeIn(200);
+    //     $('.backtotop-box').addClass('shown');
+    //   } else {
+    //     $('.backtotop-box').fadeOut(200);
+    //     $('.backtotop-box').removeClass('shown');
+    //   }
+    // });
+    // $('.backtotop-box').click(function() {
+    //   $('html, body').animate({
+    //     scrollTop: 0
+    //   }, 1000, 'easeInOutQuad');
+    // });
+    //
+    // function(b) {
+    //   return "undefined" != typeof r && r.event.triggered !== b.type ? r.event.dispatch.apply(a, arguments) : void 0
+    // }
+    </script>
+  </body>
+  </html>

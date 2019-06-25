@@ -13,20 +13,20 @@ h1,h3 {
 }
 
 @media (min-width: 576px) {
-      h1, h3{
-        font-size:15px;
-      }
+  h3{
+    font-size:15px;
+  }
 }
 
 @media (min-width: 768px) {
-  h1, h3{
+  h3{
     font-size:20px;
   }
- }
+}
 
 
 @media (min-width: 992px) {
   h1, h3{
     font-size:25px;
   }
-  }
+}

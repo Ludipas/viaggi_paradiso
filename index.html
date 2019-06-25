@@ -26,7 +26,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-sm-1">
-          <a class="smooth" href="#journalism"><h3>Journalism</h3> </a>
+          <h3><a class="smooth" href="#journalism">Journalism </a></h3>
         </div>
         <div class="col-lg-4 col-sm-1">
           <h3>Installations</h3>
@@ -76,60 +76,48 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script>
 
-  $(function() {
-    $('.smooth').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-  // $(document).ready(function(){
-  //   $('.movement').each(function() {
-  //     animationHover(this, 'bounce');
-  //   });
-  //   $('.share').each(function() {
-  //     animationHover(this, 'tada');
-  //   });
-  // });
+  <script>
+       $(function() {
+         $('.smooth').click(function() {
+           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+             var target = $(this.hash);
+             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                 scrollTop: target.offset().top
+               }, 1000);
+               return false;
+             }
+           }
+         });
+       });
+     </script>
 
-  // function animationHover(element, animation){
-  //   element = $(element);
-  //   element.hover(
-  //     function() {
-  //       element.addClass('animated ' + animation);
-  //     },
-  //     function(){
-  //       //wait for animation to finish before removing classes
-  //       window.setTimeout( function(){
-  //         element.removeClass('animated ' + animation);
-  //       }, 2000);
-  //     });
-  //   }
+     <script>
+       $(document).ready(function(){
+         $('.movement').each(function() {
+           animationHover(this, 'bounce');
+           });
+         $('.share').each(function() {
+           animationHover(this, 'tada');
+           });
+       });
 
-
-    // $(function() {
-    //   $('a[href*="#"]:not([href="#"])').click(function() {
-    //     var multiplier = this.getAttribute('data-distance');
-    //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    //       var target = $(this.hash);
-    //       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    //       if (target.length) {
-    //         $('html, body').animate({
-    //           scrollTop: target.offset().top
-    //         }, 1000 * multiplier, 'easeInOutQuad');
-    //         return false;
-    //       }
-    //     }
-    //   });
-    // });
-    //
+       function animationHover(element, animation){
+         element = $(element);
+         element.hover(
+         function() {
+           element.addClass('animated ' + animation);
+         },
+         function(){
+           //wait for animation to finish before removing classes
+           window.setTimeout( function(){
+             element.removeClass('animated ' + animation);
+             }, 2000);
+         });
+       }
+     </script>
+     
     // $(window).scroll(function() {
     //   if ($(this).scrollTop() >= 800) {
     //     $('.backtotop-box').fadeIn(200);

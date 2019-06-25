@@ -35,7 +35,7 @@ img {
   margin-top: 60px;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   div.h3{
     font-size:15px;
   }

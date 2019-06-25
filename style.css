@@ -24,6 +24,10 @@ h1,h3 {
     font-weight: 700;
 }
 
+hr{
+  margin-top: 20px;
+}
+
 @media (min-width: 576px) {
   div h3{
     font-size:15px;

@@ -3,6 +3,7 @@
 body{
   font-family: 'Nunito', sans-serif !important;
   display:block;
+  font-size:15px;
 }
 
 img {
@@ -35,7 +36,7 @@ img {
   margin-top: 60px;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 576px) {
   div.h3{
     font-size:15px;
   }

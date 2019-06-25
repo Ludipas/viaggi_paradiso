@@ -26,7 +26,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-sm-1">
-          <a class="item-link" href="#group01" data-distance="1.1"><h3>Journalism</h3> </a>
+          <a class="smooth" href="#journalism"><h3>Journalism</h3> </a>
         </div>
         <div class="col-lg-4 col-sm-1">
           <h3>Installations</h3>
@@ -76,36 +76,57 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
   <script>
-      $(function() {
-          $('a[href*="#"]:not([href="#"])').click(function() {
-              var multiplier = this.getAttribute('data-distance');
-              if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                  var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                  if (target.length) {
-                      $('html, body').animate({
-                          scrollTop: target.offset().top
-                      }, 1000 * multiplier, 'easeInOutQuad');
-                      return false;
-                  }
-              }
-          });
-      });
 
-      $(window).scroll(function() {
-          if ($(this).scrollTop() >= 800) {
-              $('.backtotop-box').fadeIn(200);
-              $('.backtotop-box').addClass('shown');
-          } else {
-              $('.backtotop-box').fadeOut(200);
-              $('.backtotop-box').removeClass('shown');
-          }
-      });
-      $('.backtotop-box').click(function() {
-          $('html, body').animate({
-              scrollTop: 0
-          }, 1000, 'easeInOutQuad');
-      });
+        $(function() {
+          $('.smooth').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+      
+
+  // $(function() {
+  //   $('a[href*="#"]:not([href="#"])').click(function() {
+  //     var multiplier = this.getAttribute('data-distance');
+  //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  //       var target = $(this.hash);
+  //       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+  //       if (target.length) {
+  //         $('html, body').animate({
+  //           scrollTop: target.offset().top
+  //         }, 1000 * multiplier, 'easeInOutQuad');
+  //         return false;
+  //       }
+  //     }
+  //   });
+  // });
+  //
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() >= 800) {
+  //     $('.backtotop-box').fadeIn(200);
+  //     $('.backtotop-box').addClass('shown');
+  //   } else {
+  //     $('.backtotop-box').fadeOut(200);
+  //     $('.backtotop-box').removeClass('shown');
+  //   }
+  // });
+  // $('.backtotop-box').click(function() {
+  //   $('html, body').animate({
+  //     scrollTop: 0
+  //   }, 1000, 'easeInOutQuad');
+  // });
+  //
+  // function(b) {
+  //   return "undefined" != typeof r && r.event.triggered !== b.type ? r.event.dispatch.apply(a, arguments) : void 0
+  // }
   </script>
 </body>
 </html>

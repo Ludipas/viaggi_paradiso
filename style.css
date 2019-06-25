@@ -4,6 +4,10 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+  .row{
+    display: block;
+}
+
 h1,h3 {
   font-family: 'Nunito', sans-serif;
   display:block;

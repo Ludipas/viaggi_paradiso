@@ -1,7 +1,3 @@
-body{
-  font-family: 'Nunito', sans-serif;
-}
-
 img {
         display: block;
         margin-top:50px;
@@ -9,6 +5,7 @@ img {
         margin-right: auto;
      }
 h3,h1 {
+        font-family: 'Nunito', sans-serif;
         display:block;
        }
 #introduzione{

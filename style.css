@@ -16,11 +16,17 @@ h1,h3 {
   div h3{
     font-size:15px;
   }
+  div h1{
+    font-size:20px;
+  }
 }
 
 @media (min-width: 768px) {
   div h3{
     font-size:20px;
+  }
+  div h1{
+    font-size:23px;
   }
 }
 
@@ -28,5 +34,8 @@ h1,h3 {
 @media (min-width: 992px) {
   div h3{
     font-size:25px;
+  }
+  div h1{
+    font-size:28px;
   }
 }

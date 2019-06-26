@@ -1,15 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i&display=swap);
 
-.module {
-  cursor: url('plane_cursor_2-01'), auto;	
-}
-
 body{
   font-family: 'Nunito', sans-serif !important;
   display:block;
   font-size: 15px !important;
+  cursor: url('plane_cursor_2-01.png'), default;
 }
-
+a:hover {
+ cursor:url('plane_cursor_3-01.png'), default;
+}
 img {
   display: block;
   margin-top:50px;

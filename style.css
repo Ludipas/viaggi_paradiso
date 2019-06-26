@@ -4,7 +4,6 @@ body{
   font-family: 'Nunito', sans-serif !important;
   font-size: 15px !important;
   cursor: url('plane_cursor_2-01.png'), default;
-  cursor:auto;
 }
 a:hover {
  cursor:url('plane_cursor_3-01.png'), default;

@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i&display=swap);
 
+.module {
+  cursor: url('plane_cursor_2-01'), auto;	
+}
+
 body{
   font-family: 'Nunito', sans-serif !important;
   display:block;
@@ -31,8 +35,7 @@ img {
   margin-top:30px;
   margin-bottom:30px;
 }
-
-#introduzione hr{
+hr.divisore{
   margin-top: 60px;
 }
 

@@ -2,9 +2,9 @@
 
 body{
   font-family: 'Nunito', sans-serif !important;
-  display:block;
   font-size: 15px !important;
   cursor: url('plane_cursor_2-01.png'), default;
+  cursor:auto;
 }
 a:hover {
  cursor:url('plane_cursor_3-01.png'), default;
@@ -14,9 +14,6 @@ img {
   margin-top:50px;
   margin-left: auto;
   margin-right: auto;
-}
-  .row{
-    display: block;
 }
 
 #introduzione{
@@ -39,11 +36,11 @@ hr.divisore{
   color:black;
 }
 
-div.col-lg-4.col-md-1{
+div.col-lg-6.col-md-7.col-sm-1{
   padding:0px 0px;
 }
 
-@media (min-width: 576px){
+@media (max-width: 576px){
   div.h3{
     font-size:15px;
   }

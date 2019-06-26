@@ -43,7 +43,7 @@ div.col-lg-4.col-md-1{
   padding:0px 0px;
 }
 
-@media screen and (max-width: 576px) {
+@media (min-width: 576px){
   div.h3{
     font-size:15px;
   }
@@ -52,7 +52,7 @@ div.col-lg-4.col-md-1{
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   div.h3{
     font-size:20px;
   }
@@ -61,7 +61,7 @@ div.col-lg-4.col-md-1{
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   div.h3{
     font-size:25px;
   }

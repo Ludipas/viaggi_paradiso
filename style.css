@@ -20,6 +20,7 @@ a{
 
 img.center {
   display: block;
+  margin-bottom:0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -94,7 +95,7 @@ div.col-lg-6.col-md-7.col-sm-1{
 
 @media (min-width: 1200px) {
     body{
-      width: 80%;
+      width: 90%;
       margin-left:auto;
       margin-right:auto;
     }

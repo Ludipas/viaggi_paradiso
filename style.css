@@ -17,6 +17,7 @@ a:hover{
 a{
   color:#FF5C1E;
 }
+
 img {
   display: block;
   margin-top:-180px;
@@ -46,7 +47,7 @@ hr.divisore{
 }
 
 div.col-lg-6.col-md-7.col-sm-1{
-  padding:0px 0px;
+  /* padding:0px 0px; */
 }
 
 @media (max-width: 576px){
@@ -73,5 +74,20 @@ div.col-lg-6.col-md-7.col-sm-1{
   }
   div.h1{
     font-size:28px;
+  }
+  }
+
+@media (min-width: 1200px) {
+    body{
+      width: 70%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    div.h3{
+    font-size:25px;
+  }
+  div.h1{
+    font-size:28px;
+  }
   }
 }

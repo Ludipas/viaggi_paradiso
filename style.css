@@ -26,6 +26,12 @@ a:hover{
     margin-right: auto;
   }
 
+img.fine{
+  display: block;
+  margin-bottom:40px;
+  margin-left: auto;
+  margin-right: auto;
+}
   /* #introduzione{
   margin-top:100px;
   } */
@@ -49,6 +55,9 @@ a:hover{
     margin-top:30px;
     margin-bottom:30px;
   }
+#fine  {
+  margin-bottom:35px;
+}
   hr.divisore{
     margin-top: 60px;
     color:black;

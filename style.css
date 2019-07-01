@@ -20,10 +20,8 @@ a{
 
 img.center {
   display: block;
-  margin-top:-180px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom:-200px;
 }
 
 #introduzione{
@@ -79,10 +77,8 @@ div.col-lg-6.col-md-7.col-sm-1{
   }
   img.center {
     display: block;
-    margin-top:-20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:-150px;
   }
 }
 

@@ -16,7 +16,7 @@ a:hover{
   transition: 200ms ease 100ms;}
 
   a{
-    color:#f7cf20;
+    color:#ddb50e;
   }
 
   img.center {
@@ -72,7 +72,7 @@ a:hover{
 
   h3.quesito{
     margin: 20px 0px 20 0px;
-    color:#f7cf20;
+    color:#ddb50e;
   }
   div.col-lg-6.col-md-7.col-sm-1{
     /* padding:0px 0px; */

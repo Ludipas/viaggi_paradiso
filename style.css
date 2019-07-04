@@ -8,7 +8,8 @@ body{
 }
 a:hover{
   cursor:url('plane_cursor_3-01.png'), default;
-  color:#FF5C1E;
+  /* color:#FF5C1E; */
+  color:#f7590b;
   text-decoration: none;
   text-shadow:0px 0px 20px #FF301E;
   -webkit-transition: 200ms ease 100ms;

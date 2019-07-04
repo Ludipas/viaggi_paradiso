@@ -71,9 +71,11 @@ a:hover{
     color:black;
   }
 
-  h3.quesito{
+h3.quesito{
+    text-decoration: underline;
+    text-decoration-color:#ddb50e;
     margin: 20px 0px 20 0px;
-    color:#ddb50e;
+    /* color:#black; */
   }
   div.col-lg-6.col-md-7.col-sm-1{
     /* padding:0px 0px; */

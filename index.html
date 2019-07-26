@@ -4,11 +4,47 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/css/swiper.min.css">
 </head>
 <body>
+  <script src="lib/js/swiper.min.js"></script>
   <div class="container col-sm-8">
     <img class="img-fluid center" src="logo_03-07_600.gif">
   </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_01.jpg">
+      <!-- <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_02.jpg"> -->
+      <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_03.jpg">
+      <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_05.jpg">
+<!--       <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_06.jpg"> -->
+      <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_07.jpg">
+      <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_08.jpg">
+      <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_04.jpg">
+      <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_09.jpg">
+      <img class="swiper-slide" src="./img/DOTDOTDOT_SIMPOSIO2019_VIAGGIPARADISO_10.jpg">
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+  </div>
+
+  <div class="container col-sm-8" id="introduzione">
+    <h1 id="title" class="maintitle"> VIAGGI PARADISO</h1>
+    <h3>
+      Love nature and travel?<br> It’s time to take off!<br>
+      All inclusive vacation is all about having the space of your life! Maldives has more sea than ever now! Grab the unbeatable offer to swim in the barrier reef, now that we still have different corals types!
+      Don’t miss the chance to try the real cicchetto in Venice, before everyone leaves the lagoon!<br>
+      It is only just begun and you can be the first to snap the new landscapes of Planet Earth, Viaggi Paradiso picks for you the most incredible experiences at cheapest price!*
+    </h3>
+    <h4>
+      *all costs included (CO2 emissions, emissions of NOx (Oxides of Nitrogen) particularly effective in O3 (ozone) formation, greenhouse (water vapor), particulates (soot and sulfate) effective in modifying atmospheric balance (radiative forcing), ocean acidification, water pollution and lead emissions.
+    </h4>
+  <hr class="divisore" style="border-top: dotted 5px;" />
+  </div>
+
   <!-- <div class="container col-sm-8" id="cosa">
   <p>Documentation page.</p>
 </div> -->
@@ -249,6 +285,21 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+<script type="text/javascript">
+  var swiper = new Swiper('.swiper-container', {
+    loop:true,
+    autoplay: {
+      delay: 5000,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+  });
+</script>
 
 <script>
 $(function() {

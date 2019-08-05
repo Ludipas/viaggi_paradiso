@@ -55,6 +55,12 @@ a:hover{
     margin-bottom:50px!important;
   }
 
+  ::selection {
+  background: #f7590b;
+  color: black;
+  text-shadow: none;
+}
+
   #carosello{
   }
 
